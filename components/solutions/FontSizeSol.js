@@ -3,9 +3,8 @@ import { useState } from "react";
 export default function FontSizeSol() {
   const [fontSize, setFontSize] = useState(15);
 
-  const increaseFont = () => setFontSize((fontSize) => fontSize + 5);
-  const decreaseFont = () =>
-    setFontSize((fontSize) => fontSize > 0 && fontSize - 5);
+  const increaseFont = () => setFontSize(fontSize + 5);
+  const decreaseFont = () => setFontSize(fontSize > 0 && fontSize - 5);
 
   return (
     <div>
